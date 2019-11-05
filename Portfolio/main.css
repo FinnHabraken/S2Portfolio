@@ -32,50 +32,21 @@ svg text {
     transition: .15s;
 }
 
-#linked-svg{
+.linked-svg{
     fill: black;
     transition: .15s;
 }
 
-svg #linked-svg:hover text {
+svg .linked-svg:hover text {
     fill: #fff;
     display:block;
 
 }
 
-#linked-svg:hover{
+.linked-svg:hover{
     fill: #4d4d4d;
 
 }
-
-
-
-@media: screen and (max-width: 599px) {
-    body {
-
-    }
-}
-
-@media screen and (min-width: 600px) {
-
-}
-
-@media screen and (min-width: 900px) {
-
-}
-
-.parent {
-
-}
-
-.child {
-
-}
-
-
-
-
-
 
 .navbar{
     overflow: hidden;
@@ -113,32 +84,16 @@ svg #linked-svg:hover text {
     background-color: #565656;    
 }
 
-.transition {
-    position:absolute;
-    height:100%;    
-    width:30%;
-    background:#d6d6d6;
-    transform: skewX(-5deg) translateX(-50px);
-    transition:2s all ease-in-out;
-    -webkit-transition:2s all ease-in-out;
-    padding: 50px
+.Hide{
+    opacity: 0;
 }
 
-.anim-trans {
-    animation: anim 4s ease-in-out;
+.transition-explode {
+    opacity: 1;
+    transition: 500ms;
 }
 
-@keyframes anim{
-    0% { }
-    20%  { z-index:11; transform: skewX(5deg) translateX(-100%); }
-    40%   { transform: skewX(0deg) translateX(0);
-        width:120%; z-index:11; }
-    60%   { transform: skewX(3deg) translateX(10);
-        width:120%;z-index:11; }
-    80%   { transform: skewX(1deg) translateX(-100%);
-        width:60%;z-index:11; }
-    100%   { transform: skewX(-5deg) translateX(-50px);
-        width:30%;z-index:1; }
+html.is-animating .transition-explode{
+    opacity: 0;
 }
-
 
