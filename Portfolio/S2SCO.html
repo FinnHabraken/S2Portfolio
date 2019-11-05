@@ -10,10 +10,9 @@
         <script defer src="swupscript.js"></script>
     </head>
     <body>
+                <svg viewBox="0 0 1020.000000 1798.000000" class="content" class="cta" id="MainSVG">
 
-        <svg viewBox="0 0 1020.000000 1798.000000" class="content" class="cta" id="MainSVG">
-
-            <a href="/about.html">
+            <a href="about.html">
                 <g class="linked-svg" class="transition-explode" onclick="hideContent(MainSVG)">
                     <g transform="translate(0.000000,1798.000000) scale(0.100000,-0.100000)">
                         <path d="M3860 17944 c-311 -12 -577 -23 -591 -23 -21 -1 -38 -19 -92 -96
@@ -28,7 +27,7 @@
                     <text><tspan x="440" y="95">FINN</tspan></text>
                 </g>
             </a>
-            <a href="/S2SCO.html">
+            <a href="S2SCO.html">
                 <g class="linked-svg" class="transition-explode" onclick="hideContent(MainSVG)">
                     <g transform="translate(0.000000,1798.000000) scale(0.100000,-0.100000)">
                         <path d="M3539 12400 l-245 -38 -395 -219 c-217 -120 -728 -398 -1136 -618
@@ -45,7 +44,7 @@
                     <text><tspan x="250" y="1000">SCO</tspan></text>
                 </g>
             </a>
-            <a href="/UEX.html">
+            <a href="UEX.html">
                 <g class="linked-svg" class="transition-explode" onclick="hideContent(MainSVG)">
                     <g transform="translate(0.000000,1798.000000) scale(0.100000,-0.100000)">
                         <path d="M6320 12391 c0 -4 22 -98 49 -207 27 -109 75 -305 106 -434 31 -129
@@ -61,7 +60,7 @@
                     <text><tspan x="680" y="1000">UEX</tspan></text>
                 </g>
             </a>
-            <a href="/PTM.html">
+            <a href="PTM.html">
                 <g id="linked-svg" id="swup" class="transition-explode" onclick="hideContent(MainSVG)">
                     <g transform="translate(0.000000,1798.000000) scale(0.100000,-0.100000)">
                         <path d="M2805 2969 c-1101 -61 -1238 -69 -1240 -71 -1 -2 49 -349 111 -773
@@ -73,7 +72,7 @@
                     <text><tspan x="285" y="1670">PTM</tspan></text>
                 </g>
             </a>
-            <a href="/DEV.html">
+            <a href="DEV.html">
                 <g class="linked-svg" class="transition-explode" onclick="hideContent(MainSVG)">
                     <g transform="translate(0.000000,1798.000000) scale(0.100000,-0.100000)">
                         <path d="M5036 2168 c-4 -211 -7 -771 -9 -1245 l-2 -863 40 -4 c22 -3 616 -15
@@ -87,17 +86,27 @@
             </a>
         </svg>
         
-        <p id="swup" class="transition-explosion">clown</p>
+        <main  id="swup" class = transition-explode>
+            <p>pig</p>
+        </main>
+        
+        
 
-        <script>
-        </script>
+
         <script type="text/javascript">
 
-            function hideContXent(var1){
+            function hideContent(var1){
 
                 var content = $(var1);
-                content.addClass("Hidde");   
+                content.addClass("Hide");   
             }
+
+        </script>
+
+        <script> 
+            $( "#linked-svg" ).click(function() {
+                $( ".transition").toggleClass( "anim-trans" );
+            });
         </script>
     </body>
 </html>
