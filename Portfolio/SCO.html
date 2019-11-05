@@ -14,7 +14,7 @@
             <a xlink:href="SCO.html">
                 <g class="NavStyle">
                     <g  transform="translate(0.000000,94.000000) scale(0.100000,-0.100000)"
-                       fill="#000000" stroke="none">
+                       fill="#000000" stroke="none" id="-5" class="ScrollHidden transition">
                         <path d="M545 470 l470 -470 935 0 935 0 -470 470 -470 470 -935 0 -935 0 470
                                  -470z" class="nav-svg1"/>
                     </g>
@@ -24,7 +24,7 @@
             <a xlink:href="UEX.html">
                 <g class="NavStyle">
                     <g  transform="translate(0.000000,94.000000) scale(0.100000,-0.100000)"
-                       fill="#000000" stroke="none">
+                       fill="#000000" stroke="none" id="-4" class="ScrollHidden transition">
                         <path d="M2475 470 l470 -470 935 0 935 0 -470 470 -470 470 -935 0 -935 0
                                  470 -470z" class="nav-svg2"/>                    
                     </g>
@@ -34,7 +34,7 @@
             <a xlink:href="PTM.html">
                 <g class="NavStyle">
                     <g transform="translate(0.000000,94.000000) scale(0.100000,-0.100000)"
-                       fill="#000000" stroke="none">
+                       fill="#000000" stroke="none" id="-3" class="ScrollHidden transition">
                         <path d="M8055 470 l-470 -470 935 0 935 0 470 470 470 470 -935 0 -935 0
                                  -470 -470z" class="nav-svg3"/>                  
                     </g>
@@ -44,7 +44,7 @@
             <a xlink:href="DEV.html">
                 <g class="NavStyle">
                     <g transform="translate(0.000000,94.000000) scale(0.100000,-0.100000)"
-                       fill="#000000" stroke="none">
+                       fill="#000000" stroke="none" id="-2" class="ScrollHidden transition">
                         <path d="M9985 470 l-470 -470 935 0 935 0 470 470 470 470 -935 0 -935 0
                                  -470 -470z" class="nav-svg4"/>
                     </g>
@@ -139,11 +139,17 @@
 
         <script type = "text/javascript">
             $(document).ready(function(){
-                scroll(0, -375)
-                scroll(-1, -837)
+                scroll(0, -365);
+                for (i = -5; i <= -1; i++){
+                    scroll(i, -837);
+                };  
+                
                 for (i = 1; i <= 3; i++){
-                    scroll(i, 630);
-                }                      
+                    scroll(i, 700);
+                };  
+                
+                    
+                
             });
         </script>
 

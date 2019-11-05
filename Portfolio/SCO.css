@@ -9,13 +9,13 @@ body
 
 .HeadImage      
 {
-    border-bottom: 20px solid deepskyblue;
+    border-bottom: 20px solid #00ccff;
     width: 100%;
 }
 
 .FixedImage{
     position:fixed;
-    border-bottom: 0px solid deepskyblue;
+    border-bottom: 0px solid #00ccff;
     z-index: 8;
     left:330px;
     top: 0px;
@@ -27,7 +27,7 @@ body
     position: absolute;
     top: 400px;
     font-size: 30px;
-    margin-left: 42%;
+    margin-left: 41.7%;
     font-weight: bold;
 
 }
@@ -37,8 +37,8 @@ body
     position: fixed;
     font-weight: bold;
     font-size: 30px;
-    margin-left: 42%;
-    margin-top: 25px;
+    margin-left: 41.7%;
+    margin-top: 30px;
     z-index: 9;
 }
 
@@ -49,7 +49,6 @@ body
     left: 322px;
     margin-top: -18px;
 }
-
 
 .transition{
     transition: 1s;
@@ -130,29 +129,28 @@ body
     font-size: 16px;
     opacity: .5;
 }
-path{
-    opacity: 0.5;
-    transition: 0.2s;
-}
 
+path{
+    transition: .3s;    
+}
 svg .NavStyle:hover path {
-    opacity: 1;
+    opacity: .4;
 }
 
 .nav-svg1{
-    fill: deepskyblue;
+    fill: #008fb3;
 }
 
 .nav-svg2{
-    fill: #ffae00;
+    fill: #b07800;
 }
 
 .nav-svg3{
-    fill: #ff00bf;
+    fill: #ad0082;
 }
 
 .nav-svg4{
-    fill: #00cc0a;
+    fill: #008506;
 }
 
 .NavText{
