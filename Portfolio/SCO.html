@@ -53,7 +53,7 @@
             </a>
         </svg>
 
-        <h class=Title>Strategy & Concepting</h>       
+        <h id=Title>Strategy & Concepting</h>       
         <h class="ScrollHidden FixedTitle" id="0">Strategy & Concepting</h>
         <a href="https://unsplash.com/photos/p8kaVRe4edM" class="Source" target="new">Photo by JESHOOTS.COM on Unsplash</a>
         <img class="HeadImage" src="image/background-sco.jpg">
@@ -133,23 +133,25 @@
         </div>
 
 
-        <div onscroll="myFunction()"></div>
-        <br>
-        <br>
+        <script type = "text/javascript">
+            window.onbeforeunload = function(){
+                window.scrollTo(0, 0);
+            }
+        </script>
 
         <script type = "text/javascript">
             $(document).ready(function(){
-                scroll(0, -365);
-                for (i = -5; i <= -1; i++){
+                scroll(0, -370);
+
+                for (i = -5; i <= -1; i++)
+                {
                     scroll(i, -837);
-                };  
-                
-                for (i = 1; i <= 3; i++){
+                }; 
+
+                for (i = 1; i <= 3; i++)
+                {
                     scroll(i, 700);
-                };  
-                
-                    
-                
+                }; 
             });
         </script>
 
@@ -157,6 +159,9 @@
             function scroll(num1, num2){
                 var content = $("#" + num1);
                 var pos = content.position();
+                var title = $("#0")
+                var old = $("#Title")
+                
                 $(window).scroll(function () {
                     var windowpos = $(window).scrollTop();
                     if (windowpos >= (pos.top - num2)) {
@@ -166,6 +171,14 @@
                     else {
                         content.removeClass("ScrollShown");
                         content.addClass("ScrollHidden");
+                    };
+                    if (title.hasClass("ScrollShown")){
+                        old.removeClass("ScrollShown");
+                        old.addClass("ScrollHidden");
+                    }
+                    else {
+                        old.addClass("ScrollShown");
+                        old.removeClass("ScrollHidden");
                     }
                 });
             }
