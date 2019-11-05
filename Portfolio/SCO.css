@@ -38,7 +38,7 @@ body
     font-weight: bold;
     font-size: 30px;
     margin-left: 42%;
-    margin-top: 20px;
+    margin-top: 25px;
     z-index: 9;
 }
 
@@ -130,28 +130,38 @@ body
     font-size: 16px;
     opacity: .5;
 }
+path{
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+svg .NavStyle:hover path {
+    opacity: 1;
+}
 
 .nav-svg1{
     fill: deepskyblue;
 }
 
 .nav-svg2{
-    fill: blue;
+    fill: #ffae00;
 }
 
 .nav-svg3{
-    fill: yellow;
+    fill: #ff00bf;
 }
 
 .nav-svg4{
-    fill: green;
+    fill: #00cc0a;
 }
 
 .NavText{
     z-index: 30;
     font-size: 30px;
     fill: white;
+    font-weight: bold;
 }
+
 
 
 h
