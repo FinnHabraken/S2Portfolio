@@ -1,0 +1,158 @@
+body
+{
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+    font-family: trebuchet ms;
+    
+}
+
+.HeadImage      
+{
+    border-bottom: 20px solid deepskyblue;
+    width: 100%;
+}
+
+.FixedImage{
+    position:fixed;
+    border-bottom: 0px solid deepskyblue;
+    z-index: 9;
+    left:330px;
+    top: 0px;
+}
+
+.Title {
+    color: white;
+    position: absolute;
+    top: 400px;
+    font-size: 50px;
+    margin-left: 35%;
+    font-weight: bold;
+
+}
+
+.FixedTitle {
+    color: white;
+    position: fixed;
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 35%;
+    margin-top: 12px;
+    z-index: 10;
+}
+
+
+
+.transition{
+    transition: 1s;
+}
+
+.ScrollHidden
+{
+    opacity: 0;
+}
+
+
+.ScrollShown
+{
+    opacity: 1;
+}
+
+#Content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    align-items: center;
+
+}
+
+#BodyContent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     
+}
+#BodyText
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;   
+    font-family: ;  
+}
+
+#BodyImage
+{
+    position: relative;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.BG1
+{
+    background-color: #404040;   
+}
+
+.BG2
+{
+    background-color: #00495c;   
+}
+
+
+#bg-color{
+    color: white;
+}
+
+.Source {
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 770px;
+    margin-left: 10px;
+    font-size: 16px;
+    opacity: .5;
+}
+
+h
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: #00ccff;
+}
+
+h1
+{
+    font-size: 22px;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    color: #00ccff;
+}
+
+p1
+{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p
+{
+    margin: 0px;
+    font-size: 20px;
+}
+
+
+
+
