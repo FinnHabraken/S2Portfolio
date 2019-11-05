@@ -15,6 +15,7 @@ body
 
 .FixedImage{
     position:fixed;
+    width: 65.1%;
     border-bottom: 0px solid #00ccff;
     z-index: 8;
     left:330px;
@@ -22,7 +23,7 @@ body
 
 }
 
-.Title {
+#Title {
     color: white;
     position: absolute;
     top: 400px;
@@ -110,7 +111,9 @@ body
 
 .BG2
 {
-    background-color: #00495c;   
+    background-color: #00495c;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
