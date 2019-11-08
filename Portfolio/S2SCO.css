@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: trebuchet ms
+}
+
+svg {
+    height: 393px;
+    display: block;    
+    width: 50%;
+    position: fixed;
+    top: 240px;
+    left: 170px;
+    transform: translate(-50%, -50%);
+}
+
+
+#topGradient{
+    background-image: linear-gradient(white, transparent);
+    width: 100%;
+    height: 150px;
+    margin-left: 784px;
+    position: fixed;
+    margin-top: 10px;;
+    z-index: 9;
+}
+
+#topWhiteBG{
+    width: 100%;
+    height: 10px;
+    margin-left: 784px;
+    background:white;
+    position: fixed;
+    z-index: 9;
+}
+
+p{
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    left: 250px;
+    top: 50px;
+}
+
+#whiteBG{
+    width: 780px;
+    height: 100%;
+    background:white;
+    position: fixed;
+    z-index: -1;
+}
+
+#line{
+    width: 8px;
+    height: 80%;
+    background: black;
+    position:fixed;
+    left: 776px;
+    top: 10%;
+}
+
+.leftContent{
+    text-align: right;
+    position: fixed;
+    right: 62%;
+    top: 400px;
+    max-width: 600px;
+    transition: 0.5s;
+
+}
+
+#leftText{
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    max-height: 175px;
+    overflow: hidden;
+    white-space:;
+}
+
+#leftGradient{
+    background-image: linear-gradient(transparent, white);
+    width: 600px;
+    height: 100px;
+    position: fixed;
+    margin-top: -100px;
+}
+
+#leftButton{
+    background-color: white;
+    border-style: solid;
+    border-color: gray;
+    font-family: trebuchet ms;
+    font-size: 25px;
+    color: gray;
+    padding: 10px;
+    display: inline-block;
+    transition: 0.2s;
+
+}
+
+#leftButton:hover{
+    cursor:pointer;
+    background-color: #f7f7f7;
+}
+
+
+#rightContent{
+    display: flex;
+    align-content: center;
+    margin-left: 830px;
+    flex-direction: column;
+
+}
+
+#rightImage{
+        align-self: center;
+}
+
+.rightFlex{
+    background-color: white;
+    height: 1000px;
+    display: flex;
+    align-content: center;
+    max-width: 100%;
+}
+
+img{
+    max-width: 90%;
+    margin-left: 5%;
+    align-self: stretch;
+}
+
+.scrollHidden
+{
+    opacity: 0;
+}
+
+
+.scrollShown
+{
+    opacity: 1;
+}
