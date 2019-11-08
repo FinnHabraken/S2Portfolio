@@ -21,45 +21,43 @@
                          -271 -31z"/>
             </g>
         </svg>
+
         <div id="topGradient"></div>
         <div id="topWhiteBG"></div>
         <div id="whiteBG"></div>
-
         <div id="line"></div>
+
         <div class="leftContent scrollShown" id="1">
             <H1 id="leftTitle">World Press Photo</H1>
             <div id="leftText">
                 <p1>Deze foto vertelt het verhaal over hoe de sojaproductie op het Mexicaanse schiereiland Yucatán het leven van de nabijgelegen bewoners moeilijk maakt. De chemische stoffen die aan de planten worden toegevoegd, blijken erg ongezond te zijn. Deze stoffen zijn erg ongezond voor de vele bijenhouders die in de buurt gevestigd zijn. Ook zorgt de massaproductie van soja voor erg veel ontbossing. De fotograaf laat met deze foto de problemen zien die zich in Yucatán voor doen.</p1>
             </div>
             <div id="leftGradient"></div>
-            <a href="index.html">
-                <button type="button" id="leftButton" action="index.html">Klik hier voor de hele opdracht</button>
+            <a href="file/WorldPressPhoto.pdf" target="new">
+                <button type="button" id="leftButton">Klik hier voor de hele opdracht</button>
             </a>
-
         </div>
 
         <div class="leftContent scrollHidden" id="2">
-            <H1 id="leftTitle">World Press Photo 2</H1>
+            <H1 id="leftTitle">Visual Associations</H1>
             <div id="leftText">
-                <p1> blijken erg ongezond te zijn. Deze stoffen zijn erg ongezond voor de vele bijenhouders die in de buurt gevestigd zijn. Ook zorgt de massaproductie van soja voor erg veel ontbossing. De fotograaf laat met deze foto de problemen zien die zich in Yucatán voor doen. Deze foto vertelt het verhaal over hoe de sojaproductie op het Mexicaanse schiereiland Yucatán het leven van de nabijgelegen bewoners moeilijk maakt. De chemische stoffen die aan de planten worden toegevoegd,</p1>
+                <p1>Bij deze opdracht heb ik gekeken naar foto's die gelijke beeldaspecten hebben. Zo gebruiken beide afbeeldingen hiernaast vage lichtstromingen om het verkeer weer te geven, waardoor er een snel en futuristisch beeld onstaat.</p1>
             </div>
-            <div id="leftGradient"></div>
-            <a href="index.html">
-                <button type="button" id="leftButton" action="index.html">Klik hier voor de hele opdracht</button>
+            
+            <a href="file/Collage.pdf" target="new">
+                <button type="button" id="leftButton">Klik hier voor de hele opdracht</button>
             </a>
-
         </div>
-        
+
         <div class="leftContent scrollHidden" id="3">
-            <H1 id="leftTitle">World Press Photo 3</H1>
+            <H1 id="leftTitle">PLACEHOLDER 3</H1>
             <div id="leftText">
-                <p1> blijken erg ongezond te zijn. Deze stoffen zijn erg ongezond voor de vele bijenhouders die in de buurt gevestigd zijn. Ook zorgt de massaproductie van soja voor erg veel ontbossing. De fotograaf laat met deze foto de problemen zien die zich in Yucatán voor doen. Deze foto vertelt het verhaal over hoe de sojaproductie op het Mexicaanse schiereiland Yucatán het leven van de nabijgelegen bewoners moeilijk maakt. De chemische stoffen die aan de planten worden toegevoegd,</p1>
+                <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p1>
             </div>
             <div id="leftGradient"></div>
-            <a href="index.html">
-                <button type="button" id="leftButton" action="index.html">Klik hier voor de hele opdracht</button>
+            <a href="index.html" target="new">
+                <button type="button" id="leftButton">Klik hier voor de hele opdracht</button>
             </a>
-
         </div>
 
         <div id="rightContent">
@@ -67,7 +65,8 @@
                 <img src="image/photo-1.jpg" id="rightImage">
             </div>
             <div class="rightFlex">
-                <img src="image/photo-1.jpg" id="rightImage" >
+                <img src="image/photo-2.1.jpg" id="rightImage">
+                <img src="image/photo-2.2.jpg" id="rightImage">
             </div>
             <div class="rightFlex">
                 <img src="image/photo-1.jpg" id="rightImage" >
@@ -76,7 +75,6 @@
                 <img src="image/photo-1.jpg" id="rightImage" >
             </div>
         </div>
-
 
 
         <script type="text/javascript">
@@ -87,15 +85,11 @@
 
         <script type="text/javascript">       
             $(document).ready(function(){
-                
-                for (i = 1; i <= 1000; i++)
+                for (i = 1; i <= 100; i++)
                 {
-                    var num1 = -300 + 1000 * (i - 1);
+                    var num1 = -500 + 1000 * (i - 1);
                     scroll(i, num1);
                 }
-                
-
-
             });
         </script>
 
@@ -105,13 +99,8 @@
                 var oldID = num1 - 1;
                 var contentPrev = $("#" + oldID);
                 var pos = content.position();
-                
-                console.log(contentPrev);   
-
                 $(window).scroll(function () {
                     var windowpos = $(window).scrollTop();
-                    
-                    console.log(windowpos);
                     if (windowpos >= (pos.top + num2 - 400)) {
                         content.addClass("scrollShown");
                         content.removeClass("scrollHidden");
@@ -121,10 +110,7 @@
                     else {
                         content.removeClass("scrollShown");
                         content.addClass("scrollHidden");
-                        
-                        
                     };
-
                 });
             }
         </script>

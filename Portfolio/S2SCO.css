@@ -67,9 +67,9 @@ p{
     text-align: right;
     position: fixed;
     right: 62%;
-    top: 400px;
+    top: 390px;
     max-width: 600px;
-    transition: 0.5s;
+    transition: .5s;
 
 }
 
@@ -96,11 +96,13 @@ p{
     border-style: solid;
     border-color: gray;
     font-family: trebuchet ms;
-    font-size: 25px;
+    font-size: 23px;
     color: gray;
     padding: 10px;
     display: inline-block;
     transition: 0.2s;
+    margin-top: 10px;
+    border-radius: 5px;
 
 }
 
@@ -113,13 +115,9 @@ p{
 #rightContent{
     display: flex;
     align-content: center;
-    margin-left: 830px;
+    margin-left: 840px;
     flex-direction: column;
 
-}
-
-#rightImage{
-        align-self: center;
 }
 
 .rightFlex{
@@ -127,18 +125,30 @@ p{
     height: 1000px;
     display: flex;
     align-content: center;
-    max-width: 100%;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    max-width: 95%;
+}
+
+#rightImage{
+    display:inline-block;
+    align-self: center;
+    max-height: 50%;
 }
 
 img{
-    max-width: 90%;
-    margin-left: 5%;
-    align-self: stretch;
+
+    margin-right: 10px;
+    object-fit: contain;
 }
 
 .scrollHidden
 {
     opacity: 0;
+    margin-top: 400px;
+    transition-timing-function: ease-out;
 }
 
 
