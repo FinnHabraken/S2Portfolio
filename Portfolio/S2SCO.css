@@ -16,6 +16,17 @@ svg {
     top: 240px;
     left: 170px;
     transform: translate(-50%, -50%);
+
+}
+
+.linked-svg{
+    fill: black;
+    transition: .2s;
+}
+
+
+.linked-svg:hover{
+    fill: #4d4d4d;
 }
 
 
@@ -34,6 +45,27 @@ svg {
     height: 10px;
     margin-left: 784px;
     background:white;
+    position: fixed;
+    z-index: 9;
+}
+
+#bottomGradient{
+    background-image: linear-gradient(transparent, white);
+    bottom: 0px;
+    width: 100%;
+    height: 150px;
+    margin-left: 784px;
+    position: fixed;
+    margin-top: 10px;;
+    z-index: 9;
+}
+
+#bottomWhiteBG{
+    width: 100%;
+    height: 10px;
+    bottom: 0px;
+    margin-left: 784px;
+    background: white;
     position: fixed;
     z-index: 9;
 }
