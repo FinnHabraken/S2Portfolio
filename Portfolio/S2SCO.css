@@ -19,14 +19,30 @@ svg {
 
 }
 
+.transition{
+    transition: .2s;
+}
+
 .linked-svg{
     fill: black;
-    transition: .2s;
+
 }
 
 
 .linked-svg:hover{
     fill: #4d4d4d;
+}
+
+svg .linked-svg:hover .arrow-back {
+    fill: white;
+}
+
+svg .arrow-back:hover .linked-svg {
+    fill: #4d4d4d;
+}
+
+.arrow-back:hover {
+    fill: white;
 }
 
 
