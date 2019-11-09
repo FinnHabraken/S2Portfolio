@@ -30,20 +30,14 @@ svg {
 
 
 .linked-svg:hover{
-    fill: #4d4d4d;
+    fill: #2e2e2e;
 }
 
 svg .linked-svg:hover .arrow-back {
     fill: white;
 }
 
-svg .arrow-back:hover .linked-svg {
-    fill: #4d4d4d;
-}
 
-.arrow-back:hover {
-    fill: white;
-}
 
 
 #topGradient{
@@ -142,10 +136,10 @@ p{
 #leftButton{
     background-color: white;
     border-style: solid;
-    border-color: gray;
+    border-color: #525252;
     font-family: trebuchet ms;
     font-size: 23px;
-    color: gray;
+    color: #525252;
     padding: 10px;
     display: inline-block;
     transition: 0.2s;
@@ -156,7 +150,7 @@ p{
 
 #leftButton:hover{
     cursor:pointer;
-    background-color: #f7f7f7;
+    background-color: #e3e3e3;
 }
 
 
