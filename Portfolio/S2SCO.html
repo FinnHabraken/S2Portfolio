@@ -42,7 +42,7 @@
         <div class="leftContent scrollShown" id="1">
             <H1 id="leftTitle">World Press Photo</H1>
             <div id="leftText">
-                <p1>Deze foto vertelt het verhaal over hoe de sojaproductie op het Mexicaanse schiereiland Yucatán het leven van de nabijgelegen bewoners moeilijk maakt. De chemische stoffen die aan de planten worden toegevoegd, blijken erg ongezond te zijn. Deze stoffen zijn erg ongezond voor de vele bijenhouders die in de buurt gevestigd zijn. Ook zorgt de massaproductie van soja voor erg veel ontbossing. De fotograaf laat met deze foto de problemen zien die zich in Yucatán voor doen.</p1>
+                <p1>Deze foto vertelt het verhaal over hoe de sojaproductie op het Mexicaanse schiereiland Yucatan het leven van de nabijgelegen bewoners moeilijk maakt. De chemische stoffen die aan de planten worden toegevoegd, blijken erg ongezond te zijn. Deze stoffen zijn erg ongezond voor de vele bijenhouders die in de buurt gevestigd zijn. Ook zorgt de massaproductie van soja voor erg veel ontbossing. De fotograaf laat met deze foto de problemen zien die zich in Yucatán voor doen.</p1>
             </div>
             <div id="leftGradient"></div>
             <a href="file/WorldPressPhoto.pdf" target="new">
@@ -82,9 +82,20 @@
                 <button type="button" id="leftButton">Klik hier voor de hele opdracht</button>
             </a>
         </div>
+        <div class="leftContent scrollHidden" id="5">
+            <H1 id="leftTitle">PLACEHOLDER 5</H1>
+            <div id="leftText">
+                <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p1>
+            </div>
+            <div id="leftGradient"></div>
+            <a href="index.html" target="new">
+                <button type="button" id="leftButton">Klik hier voor de hele opdracht</button>
+            </a>
+        </div>
+
 
         <svg viewBox="0 0 153.000000 104.000000" class="arrow-down-svg">
-            <g transform="translate(0.000000,104.000000) scale(0.100000,-0.100000)" onclick="scrollDown()" class="arrow-down transition">
+            <g transform="translate(0.000000,104.000000) scale(0.100000,-0.100000)" onclick="scrollDown()" id="arrow-down" class="transition">
                 <path d="M121 916 c-75 -75 -122 -129 -119 -139 4 -18 755 -777 769 -777 5 0
                          9 6 9 12 0 7 170 183 377 390 l378 378 -130 130 c-71 71 -136 130 -145 130 -8
                          0 -124 -109 -257 -242 l-243 -243 -243 243 c-133 133 -249 242 -257 242 -9 0
@@ -94,48 +105,36 @@
 
 
         <div id="rightContent">
-            <section>
-                <div class="rightFlex"> 
-                    <img src="image/photo-1.jpg" id="rightImage">
-                </div>
-            </section>
-            <section>
-                <div class="rightFlex">
-                    <img src="image/photo-2.1.jpg" id="rightImage">
-                    <img src="image/photo-2.2.jpg" id="rightImage">
-                </div>
-            </section>
-            <section>
-                <div class="rightFlex">
-                    <img src="image/photo-1.jpg" id="rightImage" >
-                </div>
-            </section>
-            <section>
-                <div class="rightFlex">
-                    <img src="image/photo-1.jpg" id="rightImage" >
-                </div>
-            </section>
+            <div class="rightFlex"> 
+                <img src="image/photo-1.jpg" id="rightImage">
+            </div>
+            <div class="rightFlex">
+                <img src="image/photo-2.1.jpg" id="rightImage">
+                <img src="image/photo-2.2.jpg" id="rightImage">
+            </div>
+            <div class="rightFlex">
+                <img src="image/photo-1.jpg" id="rightImage" >
+            </div>
+            <div class="rightFlex">
+                <img src="image/photo-1.jpg" id="rightImage" >
+            </div>
+            <div class="rightFlex">
+                <img src="image/photo-1.jpg" id="rightImage" >
+            </div>
         </div>
-
-
-
-        <script type="text/javascript">
-
-        </script>
 
         <script type="text/javascript">
             var windowPos = 1000;
 
             function scrollDown(){
                 var currentPos = $(window).scrollTop();
-                console.log(currentPos);
 
                 for(i = 1; i <= 99; i++){
                     var oldPos = (i * 1000) - 1;
                     var newPos = i * 1000;
-                    
+
                     if(currentPos <= oldPos && currentPos >= newPos - 1000){
-                        window.scrollTo (0, newPos)
+                        window.scrollTo (0, newPos);
                     }
                 }
             }

@@ -37,16 +37,20 @@ svg .linked-svg:hover .arrow-back {
     fill: white;
 }
 
+.arrow-anim-up {
+    margin-top: 200px;
+}
+
 .arrow-down-svg{
     height: 45px;
-    right: 30%;
-    top: 85%;
+    right: 28%;
+    bottom: 8%;
     position: fixed;
     z-index: 15;
     transition: 0.2s;
 }
 
-.arrow-down:hover{
+#arrow-down:hover{
     fill: #2e2e2e;
     cursor: pointer;
 }
