@@ -94,19 +94,27 @@
 
 
         <div id="rightContent">
-            <div class="rightFlex"> 
-                <img src="image/photo-1.jpg" id="rightImage">
-            </div>
-            <div class="rightFlex">
-                <img src="image/photo-2.1.jpg" id="rightImage">
-                <img src="image/photo-2.2.jpg" id="rightImage">
-            </div>
-            <div class="rightFlex">
-                <img src="image/photo-1.jpg" id="rightImage" >
-            </div>
-            <div class="rightFlex">
-                <img src="image/photo-1.jpg" id="rightImage" >
-            </div>
+            <section>
+                <div class="rightFlex"> 
+                    <img src="image/photo-1.jpg" id="rightImage">
+                </div>
+            </section>
+            <section>
+                <div class="rightFlex">
+                    <img src="image/photo-2.1.jpg" id="rightImage">
+                    <img src="image/photo-2.2.jpg" id="rightImage">
+                </div>
+            </section>
+            <section>
+                <div class="rightFlex">
+                    <img src="image/photo-1.jpg" id="rightImage" >
+                </div>
+            </section>
+            <section>
+                <div class="rightFlex">
+                    <img src="image/photo-1.jpg" id="rightImage" >
+                </div>
+            </section>
         </div>
 
 
@@ -117,12 +125,26 @@
 
         <script type="text/javascript">
             var windowPos = 1000;
-            
+
             function scrollDown(){
-                var oldPos = $(window).scrollTop();                
-                window.scrollTo(0, windowPos);
-                windowPos = windowPos + windowPos;
+                var currentPos = $(window).scrollTop();
+                console.log(currentPos);
+                if(currentPos <= 999){
+                    window.scrollTo (0, 1000)
+                }
+                if(currentPos <= 1999 && currentPos >= 1000){
+                    window.scrollTo (0, 2000)
+                }
+                if(currentPos <= 2999 && currentPos >= 2000){
+                    window.scrollTo (0, 3000)
+                }
+                if(currentPos <= 3999 && currentPos >= 3000){
+                    window.scrollTo (0, 4000)
+                }
+                //window.scrollTo(1000, windowPos);
+                //windowPos = windowPos + windowPos;
             }
+
         </script>
 
         <script type="text/javascript">       
