@@ -8,7 +8,7 @@
     <body>
         <p>SCO</p>
 
-        <svg viewBox="0 0 494.000000 916.000000">
+        <svg viewBox="0 0 494.000000 916.000000" class="back-svg">
             <a href="index.html">
                 <g class="linked-svg">
                     <g transform="translate(0.000000,916.000000) scale(0.100000,-0.100000)" class="transition" >
@@ -83,6 +83,16 @@
             </a>
         </div>
 
+        <svg viewBox="0 0 153.000000 104.000000" class="arrow-down-svg">
+            <g transform="translate(0.000000,104.000000) scale(0.100000,-0.100000)" onclick="scrollDown()" class="arrow-down transition">
+                <path d="M121 916 c-75 -75 -122 -129 -119 -139 4 -18 755 -777 769 -777 5 0
+                         9 6 9 12 0 7 170 183 377 390 l378 378 -130 130 c-71 71 -136 130 -145 130 -8
+                         0 -124 -109 -257 -242 l-243 -243 -243 243 c-133 133 -249 242 -257 242 -9 0
+                         -71 -56 -139 -124z"/>
+            </g>
+        </svg>
+
+
         <div id="rightContent">
             <div class="rightFlex"> 
                 <img src="image/photo-1.jpg" id="rightImage">
@@ -100,9 +110,18 @@
         </div>
 
 
+
         <script type="text/javascript">
-            window.onbeforeunload = function(){
-                window.scrollTo(0, 0);
+
+        </script>
+
+        <script type="text/javascript">
+            var windowPos = 1000;
+            
+            function scrollDown(){
+                var oldPos = $(window).scrollTop();                
+                window.scrollTo(0, windowPos);
+                windowPos = windowPos + windowPos;
             }
         </script>
 
@@ -123,8 +142,8 @@
                 var contentPrev = $("#" + oldID);
                 var pos = content.position();
                 $(window).scroll(function () {
-                    var windowpos = $(window).scrollTop();
-                    if (windowpos >= (pos.top + num2 - 400)) {
+                    var windowPos = $(window).scrollTop();
+                    if (windowPos >= num2) {
                         content.addClass("scrollShown");
                         content.removeClass("scrollHidden");
                         contentPrev.addClass("scrollHidden");

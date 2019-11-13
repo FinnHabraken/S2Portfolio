@@ -1,22 +1,22 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body{
     overflow-x: hidden;
-    font-family: trebuchet ms
+    font-family: trebuchet ms;
 }
 
-svg {
-    height: 393px;
+.back-svg{
+    height: 393px; 
     display: block;    
     width: 50%;
     position: fixed;
     top: 240px;
     left: 170px;
     transform: translate(-50%, -50%);
-
 }
 
 .transition{
@@ -25,7 +25,7 @@ svg {
 
 .linked-svg{
     fill: black;
-
+    height: 393px;
 }
 
 
@@ -37,7 +37,19 @@ svg .linked-svg:hover .arrow-back {
     fill: white;
 }
 
+.arrow-down-svg{
+    height: 45px;
+    right: 30%;
+    top: 85%;
+    position: fixed;
+    z-index: 15;
+    transition: 0.2s;
+}
 
+.arrow-down:hover{
+    fill: #2e2e2e;
+    cursor: pointer;
+}
 
 
 #topGradient{
