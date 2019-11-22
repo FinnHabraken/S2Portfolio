@@ -1,0 +1,199 @@
+body
+{
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+    font-family: trebuchet ms;
+    
+}
+
+.HeadImage      
+{
+    border-bottom: 20px solid #00ccff;
+    width: 100%;
+}
+
+.FixedImage{
+    position:fixed;
+    width: 65.1%;
+    border-bottom: 0px solid #00ccff;
+    z-index: 8;
+    left:330px;
+    top: 0px;
+
+}
+
+#Title {
+    color: white;
+    position: absolute;
+    top: 400px;
+    font-size: 30px;
+    margin-left: 41.8%;
+    font-weight: bold;
+
+}
+
+.FixedTitle {
+    color: white;
+    position: fixed;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 41.8%;
+    margin-top: 30px;
+    z-index: 9;
+}
+
+#Navbar{
+    position: fixed;
+    width: 66%;
+    z-index: 9;
+    left: 322px;
+    margin-top: -18px;
+}
+
+.transition{
+    transition: 1s;
+}
+
+.ScrollHidden
+{
+    opacity: 0;
+}
+
+
+.ScrollShown
+{
+    opacity: 1;
+}
+
+#Content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    align-items: center;
+
+}
+
+#BodyContent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;     
+}
+#BodyText
+{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;   
+    font-family: ;  
+}
+
+#BodyImage
+{
+    position: relative;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.BG1
+{
+    background-color: #404040;   
+}
+
+.BG2
+{
+    background-color: #00495c;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#bg-color{
+    color: white;
+}
+
+.Source {
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    position: absolute;
+    top: 770px;
+    margin-left: 10px;
+    font-size: 16px;
+    opacity: .5;
+}
+
+path{
+    transition: .3s;    
+}
+svg .NavStyle:hover path {
+    opacity: .4;
+}
+
+.nav-svg1{
+    fill: #008fb3;
+}
+
+.nav-svg2{
+    fill: #b07800;
+}
+
+.nav-svg3{
+    fill: #ad0082;
+}
+
+.nav-svg4{
+    fill: #008506;
+}
+
+.NavText{
+    z-index: 30;
+    font-size: 30px;
+    fill: white;
+    font-weight: bold;
+}
+
+
+
+h
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 0px;
+    color: #00ccff;
+}
+
+h1
+{
+    font-size: 22px;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    color: #00ccff;
+}
+
+p1
+{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p
+{
+    margin: 0px;
+    font-size: 20px;
+}
+
+
+
+
