@@ -194,13 +194,10 @@ p{
     display:inline-block;
     align-self: center;
     max-height: 50%;
-}
-
-img{
-
     margin-right: 10px;
     object-fit: contain;
 }
+
 
 .scrollHidden
 {
