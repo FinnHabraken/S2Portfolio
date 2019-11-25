@@ -1,6 +1,3 @@
-
-var windowPos = 1000;
-
 function scrollDown(){
     var currentPos = $(window).scrollTop();
 
