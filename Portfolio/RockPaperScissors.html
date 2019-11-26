@@ -10,7 +10,7 @@
         <button type="button" id="paper" onclick="playGame('2'); changeImg('paperImg', '')">Paper</button>
         <button type="button" id="scissors" onclick="playGame('3'); changeImg('scissorsImg', '')">Scissors</button><br>
         <br>
-        <div>
+        <div id="pickImages">
             <img src="image/rps-rock.png" id="rockImg" class="hidden">
             <img src="image/rps-paper.png" id="paperImg" class="hidden">
             <img src="image/rps-scissors.png" id="scissorsImg" class="hidden">
@@ -21,17 +21,15 @@
         </div>
         <p1>Your Opponent Picked:</p1>
         <p1 id="opponentPick"></p1><br><br>
-        <p2 id="winOrLose"></p2>
+        <p2 id="winOrLose"></p2><br>
+        <p3 id="source">images naar: fontawesome.com</p3>
     </body>
     <script type="text/javascript">
 
         function changeImg(id1, num1){
-
-            console.log(num1)
             var removeRock = $("#rockImg" + num1);
             var removePaper = $("#paperImg" + num1);
             var removeScissors = $("#scissorsImg" + num1);
-            console.log(removeRock);
 
             removeRock.addClass("hidden");
             removeRock.removeClass("shown");
