@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="RockPaperScossors.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <button type="button" id="rock" onclick="playGame('1')">Rock</button>
+        <button type="button" id="paper" onclick="playGame('2')">Paper</button>
+        <button type="button" id="scissors" onclick="playGame('3')">Scissors</button>
+        <p>Opponent:</p>
+        <p1 id="opponentPick"></p1>
+        <p2 id="winOrLose"></p2>
+    </body>
+    <script type="text/javascript">
+        function playGame(yourPick){
+            var yourPickID = $(yourPick);
+            var rng = Math.floor((Math.random() * 3) + 1);
+            console.log(yourPick);
+            if (rng == 1)
+            {
+                $("#opponentPick").text("Rock");
+            }
+            else if (rng == 2)
+            {
+                $("#opponentPick").text("Paper");
+            }
+            else
+            {
+                $("#opponentPick").text("Scissors");
+            }
+            
+            
+        }
+    </script>
+
+</html>
