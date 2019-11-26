@@ -2,18 +2,46 @@
 
 <html>
     <head>
-        <link href="RockPaperScossors.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="RockPaperScissors.css">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </head>
     <body>
-        <button type="button" id="rock" onclick="playGame('1')">Rock</button>
-        <button type="button" id="paper" onclick="playGame('2')">Paper</button>
-        <button type="button" id="scissors" onclick="playGame('3')">Scissors</button><br><br>
+        <button type="button" id="rock" onclick="playGame('1'); changeImg('rockImg', '')">Rock</button>
+        <button type="button" id="paper" onclick="playGame('2'); changeImg('paperImg', '')">Paper</button>
+        <button type="button" id="scissors" onclick="playGame('3'); changeImg('scissorsImg', '')">Scissors</button><br>
+        <br>
+        <img src="image/rps-rock.png" id="rockImg" class="hidden">
+        <img src="image/rps-paper.png" id="paperImg" class="hidden">
+        <img src="image/rps-scissors.png" id="scissorsImg" class="hidden">
+        
+        <img src="image/rps-rock.png" id="rockImgO" class="hidden reversed">
+        <img src="image/rps-paper.png" id="paperImgO" class="hidden reversed">
+        <img src="image/rps-scissors.png" id="scissorsImgO" class="hidden reversed">
+
         <p1>Your Opponent Picked:</p1>
         <p1 id="opponentPick"></p1><br><br>
         <p2 id="winOrLose"></p2>
     </body>
     <script type="text/javascript">
+
+        function changeImg(id1, num1){
+            var removeRock = $("#rockImg");
+            var removePaper = $("#paperImg");
+            var removeScissors = $("#scissorsImg");
+            
+            removeRock.addClass("hidden");
+            removeRock.removeClass("shown");
+            removePaper.addClass("hidden");
+            removePaper.removeClass("shown");
+            removeScissors.addClass("hidden");
+            removeScissors.removeClass("shown");
+            
+            
+            var newImage = $("#" + id1);
+            newImage.addClass("shown");
+            newImage.removeClass("hidden");
+        }
+
         function playGame(yourPick){
             var rng = Math.floor((Math.random() * 3) + 1);
             var currentPick
