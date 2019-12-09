@@ -5,12 +5,37 @@
     font-family: trebuchet ms;
 }
 
+.back-svg{
+    height: 393px; 
+    display: block;    
+    width: 50%;
+    position: fixed;
+    top: 200px;
+    left: 190px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.transition{
+    transition: .2s;
+}
+
+.linked-svg{
+    fill: black;
+    height: 1393px;
+}
+
+.linked-svg:hover{
+    fill: #2e2e2e;
+}
+
+
+
 #leerdoelenButton{
     border-style: none;
     position: fixed;
     background-color: Black;
     border-color: #525252;
-
     font-size: 23px;
     color: white;
     padding: 15px 15px 15px 15px;
@@ -39,3 +64,52 @@
 #overlay{
     position: ;
 }
+
+
+
+.leftContent{
+    right: 62%;
+}
+.rightContent{
+    left: 62%; 
+}
+
+.content{
+    text-align: center;
+    position: fixed;
+    top: 300px;
+    max-width: 412px;
+    transition: .5s;
+}
+
+#contentText{
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 25px;
+    text-overflow: ellipsis;
+    max-height: 175px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#contentButton{
+    background-color: white;
+    border-style: solid;
+    border-color: #525252;
+    font-family: trebuchet ms;
+    font-size: 23px;
+    color: #525252;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    transition: 0.2s;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+
+#contentButton:hover{
+    cursor: pointer;
+    background-color: #e3e3e3;
+}
+
