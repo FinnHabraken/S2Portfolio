@@ -197,8 +197,9 @@ p{
 #rightContent{
     display: flex;
     align-content: center;
-    margin-left: 840px;
+    margin-left: 805px;
     flex-direction: column;
+    align-items: center;
 
 }
 

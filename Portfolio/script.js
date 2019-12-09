@@ -1,6 +1,7 @@
 function scrollDown(){
+    // currentPos is de paginapositie vanaf boven
     var currentPos = $(window).scrollTop();
-
+    
     for(i = 1; i <= 99; i++){
         var oldPos = (i * 1000) - 1;
         var newPos = i * 1000;
@@ -13,7 +14,7 @@ function scrollDown(){
 
 
 
-
+//elke 1000 pixels wordt nieuwe content in beeld gebracht
 $(document).ready(function(){
     for (i = 1; i <= 100; i++)
     {
@@ -23,7 +24,7 @@ $(document).ready(function(){
 });
 
 
-
+//class 'scrollHidden' wordt verwuijderd en 'scrollShown' wordt toegevoegd
 function scroll(num1, num2){
     var content = $("#" + num1);
     var oldID = num1 - 1;

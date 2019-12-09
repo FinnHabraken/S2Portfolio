@@ -5,15 +5,16 @@
         <meta charset="UTF-8">
         <title>Home</title>
         <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
-        <script defer src="script.js"></script>
+        <script defer src="____---script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link href="index.css" rel="stylesheet">
     </head>
     <body>
         <nav>
             <ul>
-                <li><a href="/./index.html">Home</a></li>
-                <li><a href="/./page2.html">page2</a></li>
-                <li><a href="/./page3.html">page3</a></li>
+                <li><a href="/test/index.html">Home</a></li>
+                <li><a href="/test/page2.html">page2</a></li>
+                <li><a href="/test/page3.html">page3</a></li>
             </ul>
         </nav>
         <main id="swup" class="transition-fade">
@@ -21,9 +22,16 @@
         </main>
 
         <script>
-            let options = {
-                linkSelector: 'a'
-            }
+
+
+            $(document).ready(function(){
+                import Swup from 'swup';
+                const options = {
+                    linkSelector: 'a[href^="' + window.location.origin + '"]:not([data-no-swup]), a[href^=""]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
+
+                };
+                const swup = new Swup(options);
+            });
         </script>
     </body>
 </html>
