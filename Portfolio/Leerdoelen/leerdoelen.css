@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: trebuchet ms;
+}
+
+#leerdoelenButton{
+    border-style: none;
+    position: fixed;
+    background-color: Black;
+    border-color: #525252;
+
+    font-size: 23px;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    display: inline-block;
+    transition: 0.2s;
+    margin-top: 10px;
+    top: 5%;
+    z-index: 3;
+    left: 46.3%;
+}
+#pageTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+}
+#line{
+    width: 8px;
+    height: 70%;
+    background: black;
+    position: fixed;
+    top: 200px;
+    left: 956px;     
+}
+
+#overlay{
+    position: ;
+}
