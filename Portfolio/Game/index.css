@@ -19,11 +19,16 @@ body{
     flex-wrap: wrap;
 }
 
-button{
+.calcNumbers{
     height: 80px;
     width: 80px;
 }
 
 .calcAdd{
     width: 160px;
+}
+    
+.calcEquals{
+    height: 80px;
+    width: 240px;
 }

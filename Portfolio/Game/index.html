@@ -6,26 +6,74 @@
     </head>
     <body>
         <div class="calc">
-            <div class="calcDisplay">0</div>
+            <div id="calcDisplay1">0</div>
+            <div id="calcDisplay2">-</div>
+            <div id="calcDisplay3">0</div>
+            <div id="calcDisplay4">0</div>
             <div class="calcButtons"> 
-                <button class="calcNumbers" onclick="calculate">7</button>
-                <button class="calcNumbers">8</button>
-                <button class="calcNumbers">9</button>
-                <button class="calcNumbers">4</button>
-                <button class="calcNumbers">5</button>
-                <button class="calcNumbers">6</button>
-                <button class="calcNumbers">1</button>
-                <button class="calcNumbers">2</button>
-                <button class="calcNumbers">3</button>
-                <button class="calcNumbers">0</button>
-                <button class="calcAdd">+</button>
-                
+                <button class="calcNumbers" onclick="calculate('7')">7</button>
+                <button class="calcNumbers" onclick="calculate('8')">8</button>
+                <button class="calcNumbers" onclick="calculate('9')">9</button>
+                <button class="calcNumbers" onclick="calculate('4')">4</button>
+                <button class="calcNumbers" onclick="calculate('5')">5</button>
+                <button class="calcNumbers" onclick="calculate('6')">6</button>
+                <button class="calcNumbers" onclick="calculate('1')">1</button>
+                <button class="calcNumbers" onclick="calculate('2')">2</button>
+                <button class="calcNumbers" onclick="calculate('3')">3</button>
+                <button class="calcNumbers" onclick="calculate('0')">0</button>
+                <button class="calcAdd" onclick="calculate('+');calcAdd();">+</button>
+                <button class="calcEquals" onclick="calcEquals()">=</button>
             </div>
         </div>
-        
-        <script>
-            function calculate{
-                
+
+        <script type="text/javascript">
+            function calculate (pressedNum){
+                $("#calcDisplay4").text(0);
+                if (parseInt(pressedNum, 10) >= 0 && parseInt(pressedNum, 10) <= 9){
+                    var num1 = parseInt(pressedNum, 10);
+                    var display2 = $("#calcDisplay2").text();
+                    if (display2 !== "+"){
+                        var display = parseInt($("#calcDisplay1").text(), 10);
+                        
+                        if (display == "0"){
+
+                            $("#calcDisplay1").text(pressedNum);
+                        }
+                        else{
+                            var newNum = display * 10 + num1;
+                            $("#calcDisplay1").text(newNum);
+                        }
+                    }
+                    else{
+                        var display = parseInt($("#calcDisplay3").text(), 10);
+                        
+                        if (display == "0"){
+
+                            $("#calcDisplay3").text(pressedNum);
+                        }
+                        else{
+                            var newNum = display * 10 + num1;
+                            $("#calcDisplay3").text(newNum);
+                        }
+                    }
+                }
+            }
+
+            function calcAdd(){
+                $("#calcDisplay2").text("+");
+
+                var display = parseInt($("#calcDisplay1").text(), 10);
+
+            }
+            
+            function calcEquals(){
+                var num1 = parseInt($("#calcDisplay1").text(), 10);
+                var num2 = parseInt($("#calcDisplay3").text(), 10);
+                var sum = num1 + num2;
+                $("#calcDisplay1").text("0");
+                $("#calcDisplay2").text("-");
+                $("#calcDisplay3").text("0");
+                $("#calcDisplay4").text(sum);
             }
         </script>
     </body>
