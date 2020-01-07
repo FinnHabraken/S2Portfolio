@@ -45,28 +45,3 @@ body{
     height: 100%;
     object-fit: contain; 
 }
-
-
-
-
-.modalImg {
-    display: none;
-    position: fixed;
-    z-index: 5;
-}
-
-.modalContent{
-    margin: auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 50%;
-    margin-top: 15%;
-    animation-name: zoomIn;
-    animation-duration: 0.4s;
-}
-
-@keyframes zoomIn {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}

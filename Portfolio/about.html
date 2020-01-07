@@ -32,32 +32,7 @@
                 <img id="item" class="imageItem" src="image/about-3.jpg">
                 <img id="item" class="imageItem" src="image/about-3.jpg">
             </div>
-            <div id="modal" class="modalImg">
-                <span class="close">&times;</span>
-                <img class="modalContent" id="img2" src="image/about-2.jpg">
-            </div>
         </div>
 
-
-        <script>
-            $(document).ready(function(){
-                var numItems = $(".imageItem").length;
-                console.log(numItems);
-                for(i = 1; i <= numItems; i++){
-                    console.log(i);
-                }
-            });
-                              
-            var modal = document.getElementById("modal");
-            var image = $('#item').attr('src');  
-            console.log(image);
-            
-            var img = document.getElementById("item");
-            var modalImg = document.getElementById("img2");
-            
-            img.onclick = function(){
-                modal.style.display = "block";
-            };
-        </script>
     </body>
 </html>
