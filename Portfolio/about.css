@@ -22,7 +22,7 @@ body{
     justify-content: space-around;
     max-width: 85%;
     flex-wrap: wrap;
-    margin-top: 2%;
+    margin-top: 15%;
 }
 
 #item{
@@ -31,6 +31,16 @@ body{
     object-fit: contain; 
     border-style: none;
     transition: .2s;
+}
+
+.textItem{
+    background-color: #525252;
+    color: white;
+
+}
+
+.text{
+    padding: 20px;  
 }
 
 #item:hover{
