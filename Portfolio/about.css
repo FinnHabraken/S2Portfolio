@@ -43,6 +43,10 @@ body{
     padding: 20px;  
 }
 
+p1{
+    font-size: 20px;
+}
+
 #item:hover{
     opacity: .8;
     cursor: pointer;
