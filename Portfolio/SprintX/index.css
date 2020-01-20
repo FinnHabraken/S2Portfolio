@@ -11,6 +11,12 @@ body{
     margin-bottom: 200px;
 }
 
+#logo{
+    width: 10%;
+    position: fixed;
+    right: 0px;
+}
+
 #content{
     display: flex;
     flex-direction: column;
@@ -70,6 +76,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.inverse{
+    background-color: #f6f6f6;
+}
+
 
 #productButton{
     margin-right: 20px;
