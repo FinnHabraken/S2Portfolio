@@ -8,10 +8,12 @@ body{
     overflow-x: hidden;
     font-family: 'Nunito', sans-serif;
     letter-spacing: -1px;
+    margin-bottom: 200px;
 }
 
 #content{
     display: flex;
+    flex-direction: column;
 }
 
 #topBG{
@@ -44,6 +46,57 @@ body{
     text-align: center;
 }
 
+#topButton{
+    border-style: none;
+    border-bottom: 5px solid;
+    border-color: white;
+    background-color: white;
+    padding: 5px 20px 0px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 50px;
+    transition: 0.2s;
+}
+#topButton:hover{
+    cursor: pointer;
+    border-color: #ffaf48;
+}
+
+#products{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#productButton{
+    margin-right: 20px;
+    margin-left: -20px;
+    border-style: none;
+    border-bottom: 5px solid;
+    border-color: #ffaf48;
+    background-color: #ffaf48;
+    padding: 5px 20px 0px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 40px;
+    transition: 0.2s;
+    color: white;
+}
+#productButton:hover{
+    cursor: pointer;
+    background-color: #f6f6f6;
+    color: #ffaf48;
+    border-color: #ffaf48;
+}
+
+#productPrice{
+    margin-top: 20px;
+}
+
 .txtBold{
     font-size: 45px;
     font-weight: 700;
@@ -55,13 +108,13 @@ body{
     font-style: italic;
     font-weight: 200;
     color: #ffaf48;
-    
+
 }
 .txtNormal{
     font-size: 30px;
     font-weight: ExtraLight;
     font-weight: 200;
-    
+
 }
 .txtNormalYellow{
     font-size: 30px;
@@ -69,5 +122,5 @@ body{
     font-style: italic;
     font-weight: 200;
     color: #ffaf48;
-    
+
 }
