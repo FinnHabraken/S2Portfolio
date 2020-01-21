@@ -22,8 +22,8 @@
                         <div>
                             <p1 class="txtNormal">Meet the</p1><p1 class="txtNormalYellow"> most balanced blade of grass </p1><p1 class="txtNormal">in our newest collection</p1>
                         </div>
-                        <div>
-                            <button id="topButton">discover</button>
+                        <div onclick="scroll()">
+                            <button id="topButton" onclick="scroller()">Discover</button>
                         </div>
                     </div>
 
@@ -68,5 +68,11 @@
                 <img src="image/img2.png" id="productImg"> 
             </div>
         </div>
+        
+        <script>
+            function scroller(){
+                window.scrollTo(0, 750);
+            }
+        </script>
     </body>
 </html>
