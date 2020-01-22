@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: trebuchet ms;
+}
+.calcNumbers{
+    height: 80px;
+    width: 80px;
+}
+
+#grid{
+    color: red;
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 240px;
+}
