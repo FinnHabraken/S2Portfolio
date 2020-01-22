@@ -8,16 +8,26 @@ body{
     overflow-x: hidden;
     font-family: trebuchet ms;
 }
+
+.calc{
+    
+}
+
 .calcNumbers{
     height: 80px;
     width: 80px;
 }
 
 #grid{
-    color: red;
     border-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 240px;
+    
+}
+
+#content{
+    margin-left: 20px;
+    margin-top: 20px;
 }
