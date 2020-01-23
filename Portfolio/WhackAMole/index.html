@@ -8,28 +8,46 @@
     </head>
     <body onload="createGrid()">
         <div id="grid"></div>
+        <p id="points">Points:</p>
 
         <script>
+            var rng = 1;
+            var points = 0;
+            var mistakes = 0;
             function createGrid(){
                 rng = Math.floor(Math.random() * 26);
-                console.log(rng);
+                while(rng == 0){
+                    rng = Math.floor(Math.random() * 26);
+                }
+
                 for(i = 1; i <= 25; i++){
                     spot = document.createElement("BUTTON");
                     spot.innerHTML = i;
                     spot.className = "spots";
-                    spot.classList.add(i)
+                    spot.id = i;
                     document.getElementById("grid").appendChild(spot);
-                    if(i == rng){
-                        var currentSpot = document.getElementsByClassName(i)
-                        document.getElementsByClassName(i).classList.add("activeSpot");
-                        spot.onclick = function newSpot(){
-                            rng = Math.floor(Math.random() * 26);
-                            console.log(rng);
-                            spot.classList.remove("activeSpot");
-                            
-                        }
-                    }
                 }
+                
+                document.getElementById("1").classList.add("activeSpot");
+                document.getElementById("1").onclick = function(){changeGrid()};
+            }
+
+            function changeGrid(){
+                document.getElementById("1").classList.remove("activeSpot");
+                var currentSpot = document.getElementById(rng.toString());
+                currentSpot.classList.remove("activeSpot");
+                currentSpot.onclick = null;
+                rng = Math.floor(Math.random() * 25 + 1);
+                console.log(rng);
+                console.log(currentSpot);
+
+                var newSpot = document.getElementById(rng);
+                console.log(newSpot);
+                newSpot.classList.add("activeSpot");
+                newSpot.onclick = function(){changeGrid()};
+                
+                points++;
+                document.getElementById("points").innerHTML = "Points:" + points;
             }
         </script>
     </body>
