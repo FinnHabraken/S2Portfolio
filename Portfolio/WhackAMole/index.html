@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whack A Mole</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body onload="createGrid()">
+        <div id="grid"></div>
+
+        <script>
+            function createGrid(){
+                rng = Math.floor(Math.random() * 26);
+                console.log(rng);
+                for(i = 1; i <= 25; i++){
+                    spot = document.createElement("BUTTON");
+                    spot.innerHTML = i;
+                    spot.className = "spots";
+                    spot.classList.add(i)
+                    document.getElementById("grid").appendChild(spot);
+                    if(i == rng){
+                        var currentSpot = document.getElementsByClassName(i)
+                        document.getElementsByClassName(i).classList.add("activeSpot");
+                        spot.onclick = function newSpot(){
+                            rng = Math.floor(Math.random() * 26);
+                            console.log(rng);
+                            spot.classList.remove("activeSpot");
+                            
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

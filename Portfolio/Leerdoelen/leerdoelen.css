@@ -1,8 +1,12 @@
+html{
+    height: 100%;
+
+}
 *{
-    padding: 0;
-    margin: 0;
+    margin: auto;
     scroll-behavior: smooth;
     font-family: trebuchet ms;
+    
 }
 
 .back-svg{
@@ -82,10 +86,6 @@
     left: 956px;     
 }
 
-#overlay{
-    position: ;
-}
-
 
 
 .leftContent{
@@ -97,10 +97,11 @@
 
 .content{
     text-align: center;
-    position: fixed;
+    position: absolute;
     top: 300px;
     max-width: 412px;
     transition: .5s;
+        padding-bottom: 100px;
 }
 
 #contentText{

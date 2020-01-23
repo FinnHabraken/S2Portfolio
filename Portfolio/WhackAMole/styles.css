@@ -1,0 +1,14 @@
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+}
+
+.spots{
+    min-height: 50px;
+    width: 50px;
+}
+
+.activeSpot{
+    background-color: turquoise;
+}
