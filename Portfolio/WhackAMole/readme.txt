@@ -1,0 +1,9 @@
+Whack A Mole
+Html
+De html is wederom erg simpel, met alleen een div en een p in de body.
+
+Javascript
+De javascript daarentegen is iets lastiger. Hij begint met het aanmaken van een rng en een points var. Deze hebben we later namelijk nog nodig. Daarna wordt de functie createGrid() aangeroepen (deze functie wordt direct aangeroepen zodra de body ingeladen wordt). Hier wordt meteen de rng verandert naar een random nummer tussen de 0 en 25. Sinds ik een nummer van tussen de 1 en 25 wil, heb ik hierna een while loop staan die elke keer als het nummer 0 is, een nieuw nummer aanmaakt. Ik had het ook op een andere manier kunnen doen, waarbij er een nummer van tussen de 0 en 24 gepakt wordt, en dit nummer dan +1 wordt gedaan. Deze code heb ik later toegevoegd onder de functie changeGrid(). Nadat er een rng aangemaakt wordt, worden er 25 buttons gemaakt, zodat ik een grid krijg van 5x5. Bij elk nummer van de for-loop wordt er een button aangemaakt met ‘i’ als id en spots als class. Deze buttons worden dan ge-append aan de grid div. Daarna wordt er aan nummer 1 een aparte class toegevoegd. Deze class geeft die button een andere kleur. Zodra er dan op deze button geklikt wordt, wordt de changeGrid() functie uitgevoerd. Deze functie haalt eerst de activeSpot class weg van de button die het op dat moment heeft, en roept daarna een nieuwe rng aan om de activeSpot daaraan te geven. Zodra er dan op de nieuwe activeSpot wordt geklikt, komt er een punt bij de score en gaat de code weer rond door weer bij changeGrid te beginnen, zodat het whack a mole spel oneindig door kan gaan.  
+ 
+Reflectie
+Deze code lijkt misschien niet al te complex, maar ik ben door veel verschillende versies gegaan voordat uiteindelijk alles werkte, en ben zelf best trots op het eindresultaat. De volgende keer dat ik zoiets wil maken, wil ik het misschien nog wel iets uitgebreider maken, met meerdere opties voor verschillende gamemodes.
